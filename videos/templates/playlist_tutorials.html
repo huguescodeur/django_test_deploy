@@ -1,14 +1,4 @@
 {% extends 'partials/base.html' %} {% load static %} {% block body %}
-<style>
-    .main-video {
-        background: url("{% static 'medias/images/background.png' %}") no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-</style>
-
 
 <div data-is-premium="{{ is_premium|yesno:'true,false' }}" class="mes_tutoriels mt-20 mb-10">
     <main class="containers">
